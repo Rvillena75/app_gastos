@@ -1,0 +1,27 @@
+{
+  "fixture": "synthetic-receipt-example",
+  "merchantName": "COMERCIO DEMOSTRACION SPA",
+  "rut": "11.111.111-1",
+  "date": "2026-08-10",
+  "time": "12:30:00",
+  "items": [
+    {
+      "description": "PRODUCTO DEMO A",
+      "quantity": 1,
+      "unitPriceMinor": 6000,
+      "lineTotalMinor": 6000
+    },
+    {
+      "description": "PRODUCTO DEMO B",
+      "quantity": 1,
+      "unitPriceMinor": 7000,
+      "lineTotalMinor": 7000
+    }
+  ],
+  "discountMinor": 2000,
+  "netMinor": 9244,
+  "taxMinor": 1756,
+  "totalMinor": 11000,
+  "category": "Salud",
+  "synthetic": true
+}

@@ -1,0 +1,35 @@
+
+# Android / Gradle generated files
+.gradle/
+.kotlin/
+**/build/
+local.properties
+*.apk
+*.aab
+
+# Local artifacts
+.artifacts/
+
+# Private local inputs; keep originals on disk, outside version control
+/Fotos_boletas_test/
+/backups/
+/app/src/debug/assets/receipt_lab/
+/*.pdf
+/ChatGPT Image*.png
+*:Zone.Identifier
+
+# Local credentials and signing keys
+.env
+.env.*
+!.env.example
+!.env.template
+*.jks
+*.keystore
+
+# IDE
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,61 @@
+{
+  "formatVersion": 1,
+  "synthetic": true,
+  "zoneId": "America/Santiago",
+  "month": "2026-08",
+  "fixedTimestamp": "2026-08-01T12:00:00Z",
+  "cards": [
+    {"last4": "1111", "name": "Tarjeta ficticia A", "type": "DEBIT"},
+    {"last4": "2222", "name": "Tarjeta ficticia B", "type": "CREDIT"}
+  ],
+  "categories": [
+    {"id": "f0:category-personal", "name": "Mi categoría personalizada", "sortOrder": 0}
+  ],
+  "expenses": [
+    {"id": "f0:clp-a", "amountMinor": 10000, "currency": "CLP", "occurredAt": "2026-08-10T16:00:00Z", "cardLast4": "1111", "merchantName": "COMERCIO SINTETICO A SPA", "categoryId": "f0:category-personal", "categoryName": "Mi categoría personalizada", "status": "IDENTIFIED"},
+    {"id": "f0:clp-b", "amountMinor": 5000, "currency": "CLP", "occurredAt": "2026-08-11T16:00:00Z", "cardLast4": null, "merchantName": "Comercio ficticio B", "categoryId": null, "categoryName": null, "status": "IDENTIFIED"},
+    {"id": "f0:usd", "amountMinor": 1250, "currency": "USD", "occurredAt": "2026-08-12T16:00:00Z", "cardLast4": "2222", "merchantName": "Comercio ficticio USD", "categoryId": null, "categoryName": null, "status": "IDENTIFIED"},
+    {"id": "f0:eur", "amountMinor": 9900, "currency": "EUR", "occurredAt": "2026-08-13T16:00:00Z", "cardLast4": null, "merchantName": "Comercio ficticio EUR", "categoryId": null, "categoryName": null, "status": "IDENTIFIED"},
+    {"id": "f0:missing-amount", "amountMinor": null, "currency": "CLP", "occurredAt": "2026-08-14T16:00:00Z", "cardLast4": null, "merchantName": "Comercio ficticio incompleto", "categoryId": null, "categoryName": null, "status": "PENDING_REVIEW"},
+    {"id": "f0:missing-merchant", "amountMinor": 2000, "currency": "CLP", "occurredAt": "2026-08-15T16:00:00Z", "cardLast4": null, "merchantName": null, "categoryId": null, "categoryName": null, "status": "PENDING_REVIEW"},
+    {"id": "f0:deleted", "amountMinor": 99000, "currency": "CLP", "occurredAt": "2026-08-16T16:00:00Z", "cardLast4": "1111", "merchantName": "Comercio ficticio borrado", "categoryId": null, "categoryName": null, "status": "DELETED"},
+    {"id": "f0:previous-month", "amountMinor": 7777, "currency": "CLP", "occurredAt": "2026-07-20T16:00:00Z", "cardLast4": null, "merchantName": "Comercio ficticio anterior", "categoryId": null, "categoryName": null, "status": "IDENTIFIED"},
+    {"id": "f0:local-month-boundary", "amountMinor": 3000, "currency": "CLP", "occurredAt": "2026-09-01T02:30:00Z", "cardLast4": null, "merchantName": "Comercio ficticio fin de mes", "categoryId": null, "categoryName": null, "status": "IDENTIFIED"}
+  ],
+  "products": [
+    {"id": "f0:product-a", "expenseId": "f0:clp-a", "name": "PRODUCTO SINTETICO A", "quantity": 2, "unitPriceMinor": 4000},
+    {"id": "f0:product-b", "expenseId": "f0:clp-a", "name": "PRODUCTO SINTETICO B", "quantity": 1, "unitPriceMinor": 4500}
+  ],
+  "evidence": [
+    {"id": "f0:evidence-wallet", "expenseId": "f0:clp-a", "type": "WALLET_NOTIFICATION", "capturedAt": "2026-08-10T16:00:00Z", "rawPayload": "COMERCIO SINTETICO A SPA CLP10.000 con tarjeta ••1111"},
+    {"id": "f0:evidence-location", "expenseId": "f0:clp-a", "type": "LOCATION", "capturedAt": "2026-08-10T16:00:00Z", "rawPayload": "lat=0.0,lon=0.0,accuracy=30.0,timestamp=1786377600000"},
+    {"id": "f0:evidence-manual", "expenseId": "f0:clp-a", "type": "MANUAL_CORRECTION", "capturedAt": "2026-08-10T16:01:00Z", "rawPayload": "category=Mi categoría personalizada"}
+  ],
+  "walletSnapshots": [
+    {"packageName": "com.google.android.apps.walletnfcrel", "notificationKey": "f0:wallet-clp", "postedAt": "2026-08-10T16:00:00Z", "title": "COMERCIO SINTETICO A SPA", "text": "CLP10.000 con tarjeta ••1111", "subText": null, "bigText": null},
+    {"packageName": "com.google.android.apps.walletnfcrel", "notificationKey": "f0:wallet-usd", "postedAt": "2026-08-12T16:00:00Z", "title": "Comercio ficticio USD", "text": "USD12.50 con tarjeta ••2222", "subText": null, "bigText": null},
+    {"packageName": "com.google.android.apps.walletnfcrel", "notificationKey": "f0:wallet-missing", "postedAt": "2026-08-14T16:00:00Z", "title": "Comercio ficticio incompleto", "text": "Compra aprobada", "subText": null, "bigText": null}
+  ],
+  "receiptOcr": {
+    "engine": "f0-synthetic-spatial-fixture",
+    "rows": [
+      [["COMERCIO SINTETICO A SPA", 10]],
+      [["RUT:", 10], ["11.111.111-1", 150]],
+      [["Boleta Electronica Nº: FICTICIO-0001", 10]],
+      [["Fecha: 10-08-2026", 10]],
+      [["ARTICULO", 10], ["CANT", 270], ["PRECIO", 350], ["VALOR", 500]],
+      [["PRODUCTO SINTETICO A", 10], ["2", 270], ["4.000", 350], ["8.000", 500]],
+      [["PRODUCTO SINTETICO B", 10], ["1", 270], ["4.500", 350], ["4.500", 500]],
+      [["DESCUENTO SINTETICO", 10], ["-2.500", 500]],
+      [["SUBTOTAL BOLETA $ 12.500", 10]],
+      [["TOTAL NETO $ 8.403", 10]],
+      [["TOTAL EXENTO $ 0", 10]],
+      [["TOTAL IVA(19%) $ 1.597", 10]],
+      [["TOTAL $ 10.000", 10]]
+    ]
+  },
+  "futureMatchCandidates": [
+    {"sourceExpenseId": "f0:clp-a", "offsetSeconds": 86400},
+    {"sourceExpenseId": "f0:clp-a", "offsetSeconds": 86401}
+  ]
+}
