@@ -16,5 +16,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "AppGastos"
+rootProject.name = "Traza"
 include(":app")

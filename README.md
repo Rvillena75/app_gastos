@@ -1,6 +1,6 @@
-# Gastos
+# Traza
 
-**Aplicación Android de seguimiento de gastos con captura desde Google Wallet y OCR de boletas en el dispositivo.**
+**Traza: aplicación Android de seguimiento de gastos con captura desde Google Wallet y OCR de boletas en el dispositivo.**
 
 Proyecto personal construido con **Kotlin, Jetpack Compose, Room, WorkManager y ML Kit**. Su objetivo es reducir el registro manual de compras y conservar la evidencia que permite revisar cada movimiento. La información financiera se almacena localmente; no requiere un backend propio.
 
